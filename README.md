@@ -1,7 +1,9 @@
 
 # Java Assignment 1
 
-This is a simple Java project that automates browser tasks using **Selenium WebDriver**. It also includes logging and easy driver setup.
+Assignement Task 1: UI automation and generate testreport
+	This is a simple Java project that automates browser tasks using **Selenium WebDriver**. It also includes logging and easy driver setup.
+
 
 ---
 
@@ -10,7 +12,22 @@ This is a simple Java project that automates browser tasks using **Selenium WebD
 - Automates browser actions with Selenium WebDriver
 - Automatically manages drivers using WebDriverManager
 - Logs useful information using SLF4J and Logback
+- Assignment Notes
 
+	- Using Java and Selenium, automate follwing steps
+	- Open ChatGPT in Chrome browser (Copilot was used as chatgpt doesn't provide responses for automated input of prompts)
+	- In the message box, write the prompt:
+
+			Please provide a Python function that accepts parameters from the command line,
+			performs addition on those parameters, and return the result.
+
+	- Use the copy button to copy the code and save it as a Python file.
+	- If needed, modify the Python function as required.
+	- Generate a CSV file with test data to test the add function with parameters and expected results.
+	- Open online code compiler - (https://www.codechef.com/ide)
+	- Select Python compiler and paste python function from file
+	- Run program by passing test parameters
+	- Generate an HTML report containing output status, time, memory, output from the website, and test case status.
 ---
 
 ## Requirements
@@ -19,7 +36,7 @@ Make sure the following tools are installed:
 
 - **Java 24**
 - **Maven 3.6.3 or newer**
-- **Any IDE** (IntelliJ IDEA recommended)
+- **IntelliJ IDEA IDE** 
 
 ---
 
@@ -48,40 +65,16 @@ Make sure the following tools are installed:
 The project uses the following dependencies. These are defined in the `pom.xml` file:
 
 - **Selenium**: For browser automation
-  ```xml
-  <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.19.1</version>
-  </dependency>
-  ```
+ 
 
 - **WebDriverManager**: To automatically manage browser drivers
-  ```xml
-  <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>5.8.0</version>
-  </dependency>
-  ```
+ 
 
 - **SLF4J**: For logging framework
-  ```xml
-  <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>2.0.9</version>
-  </dependency>
-  ```
+ 
 
 - **Logback**: For logging backend implementation
-  ```xml
-  <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>1.4.11</version>
-  </dependency>
-  ```
+  
 
 ---
 
@@ -100,8 +93,9 @@ The project uses the following dependencies. These are defined in the `pom.xml` 
 ```
 java-assignment1/
 ├── src/
-│   └── test/java/         # Test code
+│   └── test/java/org/example/AssignmentJava.java        # Test code
 ├── pom.xml                # Maven configuration
+||TestReport_assignment1.html
 └── README.md              # Project info
 ```
 
