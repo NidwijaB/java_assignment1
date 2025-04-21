@@ -98,9 +98,3 @@ java-assignment1/
 ||TestReport_assignment1.html
 └── README.md              # Project info
 ```
-
----
-
-## License
-
-This project is for educational purposes.
